@@ -40,10 +40,7 @@
       </article>
     </div>
     <hr /> -->
-     <v-card
-      class="mx-auto"
-      max-width="640"
-    >
+    <v-card class="mx-auto" max-width="640">
       <v-card-text>
         <div class="image">
           <img :src="`${members.avatar_url}`" alt="" />
@@ -55,30 +52,20 @@
         </p>
         <p class="text-h6">
           <span class="grey-text">node_id: </span>
-            {{ members.node_id }}
+          {{ members.node_id }}
         </p>
         <p class="text-h6">
           <span class="grey-text">type: </span>
           {{ members.type }}
         </p>
-
       </v-card-text>
       <v-card-actions>
-
-      <router-link :to="`/`">
-          <v-btn
-            color="grey"
-            plain text variant="outlined">
-            <v-icon
-              dark
-              left
-            >
-              mdi-arrow-left
-            </v-icon>Home
+        <router-link :to="`/`">
+          <v-btn color="grey" plain text variant="outlined">
+            <v-icon dark left> mdi-arrow-left </v-icon>Home
           </v-btn>
-            </router-link>
+        </router-link>
       </v-card-actions>
-  
     </v-card>
   </div>
 </template>
@@ -111,19 +98,19 @@ export default defineComponent({
 </script>
 <style lang="scss" scoped>
 .v-card-text {
-      display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    opacity: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  opacity: 1;
 }
 hr {
   width: 100%;
 }
 h2 {
   display: flex;
-    justify-content: center;
-    padding: 0 0 20px 0;
+  justify-content: center;
+  padding: 0 0 20px 0;
 }
 a {
   text-decoration: none;
